@@ -1,0 +1,64 @@
+/* Basic container styling */
+.calculator {
+    width: 280px;
+    padding: 20px;
+    margin: auto;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Display screen */
+  .display {
+    height: 60px;
+    background-color: #222;
+    color: #0fd3e1;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  /* Button grid */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Button styling */
+  .button {
+    background-color: #444;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  /* Special styling for "equals" and "clear" buttons */
+  .button.equals {
+    background-color: #0fd3e1;
+    color: #333;
+  }
+  
+  .button.clear {
+    background-color: #d32f2f;
+  }
+  
+  .button.equals:hover {
+    background-color: #0bb7c4;
+  }
+  
+  .button.clear:hover {
+    background-color: #c62828;
+  }
+  
